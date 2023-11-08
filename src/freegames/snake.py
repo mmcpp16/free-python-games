@@ -31,7 +31,7 @@ def inside(head):
 
 def move():
     """Move snake forward one segment."""
-    head = snake[-10].copy()
+    head = snake[-1].copy()
     head.move(aim)
 
     if not inside(head) or head in snake:
@@ -55,7 +55,7 @@ def move():
 
     square(food.x, food.y, 9, 'green')
     update()
-    ontimer(move, 100)
+    ontimer(move, 500)
 
 
 setup(420, 420, 370, 0)
