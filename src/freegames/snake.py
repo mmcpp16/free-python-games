@@ -31,7 +31,7 @@ def inside(head):
 
 def move():
     """Move snake forward one segment."""
-    head = snake[-1].copy()
+    head = snake[-10].copy()
     head.move(aim)
 
     if not inside(head) or head in snake:
